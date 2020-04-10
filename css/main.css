@@ -110,9 +110,12 @@ header .content-wrapper {display: flex;
                 flex-flow: row wrap;
                 width: 90%;}
 
-header .header-divider {width: 100%;}
+  .header-divider {
+                  width: 100%;
+                  height: 1px;
+                  margin: 10px 0 20px 0;  }
 
-header .hero-area h1 {width: 90%;
+.hero-area h1 {width: 90%;
           text-align: left;}
 
 header nav {display: flex;
@@ -193,7 +196,14 @@ aside .content-wrapper {display: flex;
 .features article {display: flex;
                   justify-content: center;
                   align-items: center;
-                /*width: 55%;*/}
+                  width: 63%;}
+
+
+.features .feature-item-description {
+                            width: 60%;
+                    }
+
+
 
 /*.features article p {width: 90%;}*/
 
@@ -242,7 +252,7 @@ aside .content-wrapper {display: flex;
                             flex-flow: row wrap;
                             width: 90%;}
 
-/*.contact-section article {width: 90%;}*/
+.contact-content {flex-basis: 100%;}
 
 
 
@@ -358,21 +368,32 @@ aside .content-wrapper {display: flex;
    /*Main page*/
 
 
+   header {
+     justify-content: space-around;
+     padding: 33px 0;
+   }
 
-  header .content-wrapper {display: flex;
-                          justify-content: space-between;
-                          width: 85%;}
+   header .content-wrapper {
+     width: 85%;
+     justify-content: space-between;
+   }
 
-  .hero-area h1 {width: 100%;
-            text-align: left;}
+   header nav {
+     width: 20%;
+   }
 
-  header nav {width: 20%;
-              display: flex;
-              justify-content: space-around;}
+   header nav ul {
+     justify-content: space-between;
+   }
 
-  header nav ul {display: flex;
-                justify-content: space-between;}
+   .hero-area {width:100%}
 
+   .hero-area h1 {width: 90%;
+             text-align: left;}
+
+   .header-divider {
+     display: none;
+   }
 
 
   /*Aside*/
@@ -382,20 +403,22 @@ aside .content-wrapper {display: flex;
                           flex-flow: row wrap;}
 
   aside .content-wrapper .form-description {width:50%;}
-  aside .content-wrapper .form {width: 50%;
+  aside .content-wrapper .form {width: 40%;
                display: flex;
                align-items: center;}
 
-  /*Feature section*/
 
-  .features .content-wrapper {width: 85%;
-                            display: flex;
-                            justify-content: space-around;}
+  .features article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    flex-basis: 50%;
+  }
 
-  .features .content-wrapper h2 {width: 100%;
-              text-align: left;}
-
-  .features  .content-wrapper .feature-items article {width: 50%;}
+  .features .feature-item-description {
+    width: 50%;
+  }
 
   /*Review*/
 
@@ -418,27 +441,38 @@ aside .content-wrapper {display: flex;
 
   /*About page*/
 
+  /*Mission section*/
+
   .mission .content-wrapper {
         display: flex;
         flex-flow: row wrap;
-        justify-content: space-between;
+        justify-content: space-around;
         width: 85%;
 
   }
 
-  .mission .content-wrapper .mission-content {
+ .mission-content {
     width: 50%;
   }
 
-.contact-section .content-wrapper {display: flex;
-                          justify-content: space-between;
-                          flex-flow: row wrap;
-                          width: 85%;
+.mission-description {width: 90%;
+                      }
+
+/*Contact Section*/
+
+.contact-section .content-wrapper {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+      width: 85%;
+
+}
+
+ .contact-content {
+    flex-basis: 50%;
   }
 
-  .contact-section .content-wrapper .contact-content {
-    width: 50%;
-  }
+
 
 /*FAQ page */
 
@@ -446,9 +480,13 @@ aside .content-wrapper {display: flex;
                       justify-content: space-around;
                       width: 85%;}
 
-.faq .content-wrapper h1 {width: 100%;}
+.faq  h1 {width: 100%;}
 
-.faq .content-wrapper .faq-content {width: 50%;}
+.faq-content {flex-basis: 50%;}
+
+.faq p {width: 80%;}
+
+
 
 
   /* Style adjustments for viewports that meet the condition */
@@ -456,7 +494,29 @@ aside .content-wrapper {display: flex;
 
 /*Desktop styles*/
 @media only screen and (min-width: 1200px) {
-  /* Style adjustments for viewports that meet the condition */
+
+  /*Home page*/
+
+  /*Footer*/
+
+  footer .content-wrapper {width: 100%;}
+
+
+  /*Features section */
+
+
+  .features article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    flex-basis: 33%;
+  }
+
+  .features .feature-item-description {
+    width: 50%;
+  }
+
 }
 
 
