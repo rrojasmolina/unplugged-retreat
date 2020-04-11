@@ -99,6 +99,32 @@ textarea {
    ========================================================================== */
 /* Base header-footer styles*/
 
+/*General styles*/
+html {font-size: 16px;}
+
+body {font-family: 'Open Sans', sans-serif;
+    font-size: 1em;}
+
+ul, ol {list-style-type: none;}
+
+a {color: #e2e3ed;
+     text-decoration: none;}
+
+h1, h2 {font-family: 'Poppins', sans-serif;
+  font-size: 2em;}
+
+h3,h4 {font-family: 'Poppins', sans-serif;
+    font-size: 1.125em;}
+
+
+p {line-height: 1.7em;}
+
+img {}
+
+address {font-style: normal;}
+
+.content-wrapper {}
+
 header, footer {display: flex;
                 justify-content: center;
                 align-items: center;
@@ -435,9 +461,9 @@ aside .content-wrapper {display: flex;
                           align-items: center;
                           width: 65%;}
 
-  footer .content-wrapper .footer-content {display: flex;
+  footer .footer-content {display: flex;
                           justify-content: space-around;
-                          width: 50%;}
+                          flex-basis: 100%}
 
   /*About page*/
 
