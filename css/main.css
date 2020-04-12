@@ -128,7 +128,7 @@ h4 {font-size: 1.3em;}
 
 p {line-height: 1.7em;}
 
-img {}
+img {width: 100%;}
 
 address {font-style: normal;}
 
@@ -140,7 +140,8 @@ header, footer {display: flex;
                 flex-flow: row wrap;}
 
 header {background-color: black;
-        padding: 20px 0 30px 0;}
+        padding: 20px 0 30px 0;
+        margin-bottom: -30px;}
 
 header .content-wrapper {display: flex;
                 justify-content: center;
@@ -153,8 +154,6 @@ header .content-wrapper {display: flex;
                   height: 1px;
                   margin: 10px 0 20px 0;  }
 
-.hero-area h1 {width: 90%;
-          text-align: left;}
 
 header nav {display: flex;
           justify-content: space-around;
@@ -192,9 +191,18 @@ footer .copyright {display: flex;
 
 /*Base main styles of the Homepage page*/
 
-.hero-area {display: flex;
+.hero-area { background: url('../img/hero.png') center no-repeat #333;
+            background-size: cover;
+            display: flex;
             justify-content: center;
-            flex-flow: row wrap;}
+            align-items: flex-start;
+            flex-flow: row wrap;
+            height: 30rem;
+            color: #e2e3ed;}
+
+.hero-area h1 {width: 90%;
+          text-align: left;}
+
 
 /*Aside*/
 
@@ -254,6 +262,10 @@ input[type=button] {
         justify-content: center;
         flex-flow: row wrap;
         padding: 30px 0 30px 0;}
+
+.features {background: url('../img/features-background.png') center no-repeat;
+          background-size: cover;
+          color: #e2e3ed;}
 
 .features .content-wrapper {display: flex;
                           justify-content: center;
