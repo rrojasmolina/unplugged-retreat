@@ -112,8 +112,8 @@ ul, ol {list-style-type: none;
 a {color: #e2e3ed;
      text-decoration: none;}
 
-h1, h2, h3, h4 {font-family: 'Poppins', sans-serif;
-              font-style: normal;}
+/*h1, h2, h3, h4 {font-family: 'Poppins', sans-serif;
+              font-style: normal;}*/
 
 h1 {font-size: 3em;}
 
@@ -298,10 +298,10 @@ input[type=button] {
                           flex-flow: row wrap;
                           width: 90%;}
 
-.reviews .content-wrapper h3 {width: 100%;}
 
-.reviews h3 {width: 85%;}
-.reviews h4 {width:50%;}
+
+.reviews h2 {width: 90%;}
+.reviews h3 {width:50%;}
 
 
 
@@ -339,14 +339,6 @@ input[type=button] {
 .contact-section h2, h3 {width:90%;}
 
 .contact-content {width: 90%;}
-
-
-
-
-
-
-
-
 
 
 
