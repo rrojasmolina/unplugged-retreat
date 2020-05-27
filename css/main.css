@@ -116,11 +116,11 @@ a {color: #e2e3ed;
               font-style: normal;}*/
 
 
-h2 {font-size: 1.8em;}
+h2 {font-size: 1.5em;}
 
-h3 {font-size: 1.3em;}
+h3 {font-size: 1.2em;}
 
-h4 {font-size: 1.3em;}
+h4 {font-size: 1.1em;}
 
 
 
@@ -148,7 +148,8 @@ header figure {width: 60%;
               display: flex;
               justify-content: center;
               align-items: center;
-              flex-flow: row wrap;}
+              flex-flow: row wrap;
+              padding: 10px 0 10px 0;}
 
             .header-divider {
                 background: #3a3a3a;
@@ -170,7 +171,7 @@ header nav {display: flex;
           justify-content: center;
           align-items: center;
           flex-flow: row wrap;
-          width: 60%;
+          width: 80%;
           padding: 0 0 5px 0;
           margin: 0;}
 
@@ -230,7 +231,7 @@ footer .copyright {display: flex;
             color: #e2e3ed;}
 
 .hero-area h1 {width: 90%;
-          font-size: 2.5em;
+          font-size: 2.5rem;
           text-align: left;}
 
 
@@ -358,7 +359,8 @@ input[type=button] {
 .reviews figure img {padding-top: 30px;
                 width: 100%;}
 
-.reviews h2 {width: 90%;}
+.reviews h2 {width: 90%;
+            font-size: 1.5em;}
 .reviews h3 {width:90%;
             padding-top: 30px;}
 
