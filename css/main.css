@@ -154,7 +154,7 @@ header figure {width: 60%;
                 background: #3a3a3a;
                 height: 1px;
                 width: 100%;
-                margin: 10px 0 20px 0;
+                margin: 10px 0 10px 0;
               }
 
 
@@ -164,22 +164,19 @@ header .content-wrapper {display: flex;
                 flex-flow: row wrap;
                 width: 90%;}
 
-  .header-divider {
-                  width: 100%;
-                  height: 1px;
-                  margin: 10px 0 10px 0;  }
 
 
 header nav {display: flex;
           justify-content: center;
           align-items: center;
           flex-flow: row wrap;
-
-            /*flex-flow: row wrap;*/
-            width: 60%;}
+          width: 60%;
+          padding: 0 0 5px 0;
+          margin: 0;}
 
 header nav ul {display: flex;
-              justify-content: space-around;
+              justify-content: space-between;
+              align-items:  flex-end;
               width: 100%;}
 
 
@@ -261,8 +258,7 @@ aside .content-wrapper {display: flex;
                         flex-flow: row wrap;
                         width: 90%;}
 
-aside .form {
-          margin-top: 30px;}
+
 
 input[type=text] {
             box-sizing: border-box;
@@ -288,7 +284,7 @@ input[type=button] {
 
   aside h3 {width: 100%;
             margin-left: 0;
-            padding: 0;}
+            padding-bottom: 15px;}
 
 /*aside .form-description {width:100%;}*/
 /*aside .form {width:100%;
@@ -359,10 +355,11 @@ input[type=button] {
                           padding-bottom: 30px;}
 
 
-.reviews figure {padding-top: 30px;}
+.reviews figure img {padding-top: 30px;
+                width: 100%;}
 
 .reviews h2 {width: 90%;}
-.reviews h3 {width:50%;
+.reviews h3 {width:90%;
             padding-top: 30px;}
 
 
@@ -428,9 +425,6 @@ input[type=button] {
 
 /*.contact-content p, h3 {margin-left: 0;
                    padding-left: 0;}*/
-
-
-
 
 
 
@@ -567,7 +561,7 @@ input[type=button] {
    header figure {width: 30%;}
 
    header nav {
-     width: 25%;
+     width: 30%;
    }
 
    header nav ul {
@@ -613,11 +607,11 @@ input[type=button] {
 
   /*Review*/
 
-  .reviews .content-wrapper {width:85%;
+  .reviews .content-wrapper {width:90%;
                             display: flex;
                             justify-content: space-between;}
 
-  .content-wrapper  .review-content {width: 50%;}
+  .content-wrapper  .review-content {width: 45%;}
 
   /*.reviews figure {padding: 0;}*/
 
@@ -625,7 +619,7 @@ input[type=button] {
                     width: 90%;}*/
 
 
-  /*.reviews h3 {width: 100%;}*/
+  .reviews h3 {width: 100%;}
 
 
 
@@ -650,7 +644,6 @@ input[type=button] {
   /*Mission section*/
 
 
-
   .mission .content-wrapper {
         display: flex;
         justify-content: space-between;
@@ -659,10 +652,6 @@ input[type=button] {
 
  .mission-content {
     width: 50%;}
-
-
-
-
 
 .map figure {
 
@@ -673,23 +662,17 @@ input[type=button] {
 
 .contact-section .content-wrapper {
       display: flex;
-      justify-content: space-around;
+      justify-content: space-between;
+      align-items: flex-start;
       flex-flow: row wrap;
       width: 85%;
 
 
 }
-
-.contact-content {flex-basis: 50%;
-                margin: 0;}
-
-.contact-content p, h2, h3 {
-
-   padding-left: 0;
-   margin-left: 0;
+.contact-section h2 {
+    width: 85%;
   }
-
-
+.contact-content {width: 50%;}
 
 
 
